@@ -8,8 +8,6 @@
     line-height: 1.5;
     margin-top:20vh;
     word-wrap:break-word;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 .bluebox{
@@ -30,8 +28,6 @@
     font-size: 1.5rem;
     line-height: 1.5;
     max-width: 65%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 .section-title{
     margin-bottom: 3rem;
@@ -44,8 +40,6 @@
     padding: 0;
     object-fit: contain;
     margin-left: 2rem;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 .latest-post-box
@@ -132,7 +126,6 @@
 {
     background-color: blue;
     margin-bottom: 10%;
-    margin-top: 20vh;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
@@ -244,14 +237,6 @@ font-size: 2.5rem;
 
 
 
-.image_box.visible {
-    opacity: 1;
-}
-.text_box.visible{
-    opacity: 1;
-}
-.welcome-p.visible{
-    opacity: 1;
-}
+
 
 
