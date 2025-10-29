@@ -117,23 +117,14 @@ document.getElementById("submitBtn").addEventListener("click", function (e) {
     });
 });
 
-window.addEventListener('load', () => {
-    document.getElementById('myImage').classList.add('visible');
-});
 
-window.addEventListener('load', () => {
-    document.getElementById('myText').classList.add('visible');
-});
-
-window.addEventListener('load', () => {
-    document.getElementById('myText_1').classList.add('visible');
-});
 window.addEventListener('load', () => {
     document.getElementById('project-card').classList.add('visible');
 });
 window.addEventListener('load', () => {
     document.getElementById('project-card_1').classList.add('visible');
 });
+
 
 
 
