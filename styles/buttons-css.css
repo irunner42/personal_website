@@ -1,0 +1,165 @@
+
+.nav-up{
+    background-color:blue;
+    height:30px;
+}
+.nav-bottom{
+    background-color:white;
+    margin-top:3vh;
+    position: relative; /* optional */
+    z-index: 1; /* must be lower than modal and overlay */
+}
+
+.about-me-a{
+    margin-right:30px;
+}
+.contact-me-button {
+    padding: 10px 20px;
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    border: solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+    .contact-me-button:hover {
+        background-color: #2C3539;
+        color: white;
+    }
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1000;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal_header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.modal_header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal_header .close_button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal_body{
+    padding: 10px 15px;
+    flex-direction: column;
+    display: flex;
+    row-gap: 0.25rem;
+}
+.modal_input{
+    border-radius: 5px;
+    border-width: 0px;
+    border-color:rgba(220,220,220,.5); 
+    height: 1.95rem;
+    width: 95%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0.75rem;
+    justify-content: center;
+    background-color: rgba(220,220,220,.5);
+}
+.modal_input_message{
+    border-radius: 5px;
+    border-width: 0px;
+    border-color:rgba(220,220,220,.5); 
+    height: 10rem;
+    width: 95%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+    padding-left: 0.5rem;
+    background-color: rgba(220,220,220,.5);
+    resize: vertical;
+    min-height: 100px;
+}
+.modal_body_tag{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+}
+.modal_body_tag:after{
+    color:#e32;
+    content: ' * ';
+    display: inline;
+}
+.submit_button{
+    border-radius: 5px;
+    border-width: 0px;
+    border-color:rgba(220,220,220,.5);
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+    margin-left: 72%;
+    width: 25%;
+    padding: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+.modal_body_tag.error-label {
+  color: red;
+  font-weight: bold;
+}
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.modal_input.error,
+.modal_input_message.error {
+  border: 1px solid rgba(180,0,0,.3);
+  background-color: rgba(180,0,0,.3);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out;
+    z-index: 999;
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

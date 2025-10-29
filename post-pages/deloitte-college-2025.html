@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="/website portfolio/styles/basic-css.css"/>
+    <link rel="stylesheet" href="/website portfolio/styles/buttons-css.css" />
+    <meta charset="utf-8" />
+    <title>Wage Calculator in Python Tkinter</title>
+</head>
+<body>
+  <nav class="nav-up">
+    </nav>
+    <nav class="nav-bottom">
+        <ul>
+            <li><button data-modal-target="#modal" class="contact-me-button">Contact Me</button></li>
+            <li><a href="/website portfolio/index.html">Home</a></li>
+            <li><a href="/website portfolio/project.html" class="projects-a">Projects</a></li>
+            <li><a href="/website portfolio/post-blog.html" class="about-me-a">About me</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="modal" id="modal">
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        <div class="modal_header">
+            <div class="title">Get In Touch</div>
+            <button type="button" data-close-button class="close_button">&times;</button>
+        </div>
+        <div class="modal_body">
+            <input type="hidden" name="access_key" value="45d4ebc0-09a4-43e3-96dd-1e376b2b80b1">
+
+            <div class="modal_body_tag">Name</div>
+            <input class="modal_input" type="text" placeholder="Your Name" required name="name" />
+
+            <div class="modal_body_tag">Email</div>
+            <input class="modal_input" type="email" placeholder="Your Email" required name="email" />
+
+            <div class="modal_body_tag">Message</div>
+            <textarea class="modal_input_message" placeholder="Your Message" name="message"></textarea>
+
+            <button id="submitBtn" class="submit_button" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+
+    <div style="display:flex; flex-direction: column;margin-top: 10vh;margin-bottom: 10vh; justify-content: center; align-items: center; gap: 1.5rem;">
+    <h1>Autorové poznámky ćislo #1</h1>
+    <h2>Moja skúsenosť Deloitte 2025</h2>
+    <p style="width:85%; font-size: 1.15rem;"> V treťom ročníku som sa rozhodol, že si chcem nájsť prácu vo svojom odbore (takže financie/IT) preto ako každý bežný človek žijúci
+       na Slovensku, som otvoril profesia.sk a vidím že tam je ponúka od Deloitte o workshop (a možno aj o prácu) v oblasti auditu a daní
+    </p>
+    <img src="/website portfolio/items-post-post/deloitte_registracia.png" alt="registration page for Deloitte event" >
+    <p style="width:85%; font-size: 1.15rem;"> <Strong>Ak sa tam dostať?</Strong> Odpoveď: ťukáme a posielame svoje údaje, potom ako som pochopil nasleduje nejaké výberové konanie
+      a keď budete mať štastie vám zavolajú a dostanete oficiálnu prihlášku na ten workshop. V Bratislave pôjdete do ich hlavnej kancelárie na Pribinovej pri Eurovei. 
+    </p>
+    <img src="/website portfolio/items-post-post/kancel.png" style="width: 45%; max-width: 650px;" alt="photo of the Deloitte's office" >
+    <p style="width:85%; font-size: 1.15rem;">
+        Workshop trvá dva dni od 9:00 do 14:00-15:00. Je tam aj obedová prestávka, čomu som sa divil najviac bolo že spoločnosť Deloitte má vlastného šéfkuchára takže jedlo 
+        môžem ohodnotiť ako veľmi dobré 
+    </p>
+    <img src="/website portfolio/items-post-post/jedlo.jpg" style="width: 45%; max-width: 650px;" alt="photo of the food">
+    <p style="width:85%; font-size: 1.15rem;">
+        Prvý deň venovaný témam spojeným s daňami, sadnete si a počuvate ich špecialistov,ktorí vysvetľujú základy DPH (aspoň tak bolo u mňa). Pačilo sa mi, že nas rozdelili
+        do skupiniek, sadli k nám pracovnicí a ukazovali nám, ako spraviť napríklad daňové priznanie podľa §69 zákona o DPH, Nebolo to však nič extra vzrušujúce, preto som sa viac tešil na druhý deň –
+        <strong>Audit</strong>. Deloitte nám priradil piatích manažérov, ktorí nám ukazovali základné procesy v audite a davali nám rôzne úlohy. Úlohy sú z reálnej praxi ale 
+        s tým že Deloitte je Big4, ktorá investuje najviac do AI, treba sa pripraviť na to, že všetky vídeá, ktoré obsahovali informáciu k úlohám, sú vytvorené
+        s pomocou AI takže low-quality/creepy vídeá. Musím však uznať, že úlohy sú super a vďaka tomu že ľudia sú v skupinkách, snažite sa zapojiť vaše rôzné znalosti a navzájom si pomáhať. 
+        Mali sme spolu päť úloh - za každú úlohu sa získavali body,ktoré zvýšovali šancu na ponúku práce v Deloitte. Na konci náš tím mal 46 bodov čo nám prinieslo drúhe miesto, Víťazi dostali batoh 
+        s logom Deloitte.
+    </p>
+     <img src="/website portfolio/items-post-post/certifikat.jpg" style="width: 45%; max-width: 650px;"  alt="photo of the certificate">
+     <p style="width:85%; font-size: 1.15rem;">
+       Na záver, musím povedaž, že som tam stravil príjemný čas a získal som nové znalosti. Ak idete na Workshop s cieľom získať prácu, určite by som to neodporúčal. Takmer každý, kto tam bol, už mal bakalára a
+       dokončoval inginierske štúdium na EUBE (Ekonomická Univerzita v Bratislave). Preto choďte tam minimálne s bakalárskym titulom, ak vám ide o pracovnú ponuku - alebo len tak, ak sa chcete vzdelávať. 
+       Ako príjemný bonus získate aj certifikát o úspešnom absolvovaní ich workshopu.
+         </p>
+         <p style="width:85%; font-size: 1.15rem;"> 
+            Celkovo by som tomu dal 7,5/10 – dobré pre tých, ktorí si chcú začať kariéru alebo sú len zvedaví. Prácu som, žiaľ, nezískal :( (Napísané 29. 10. 2025 o 14:53)
+         </p>
+    </div>
+
+
+    <footer>
+        <div class="footer-div">
+            <div class="footer-left">Made by Kristian Bauer</div>
+            <div class="footer-middle"></div>
+            <div class="footer-right" onclick="window.open('/website portfolio/Zivotopis_Bauer_2.pdf')">My CV</div>
+        </div>
+    </footer>
+
+    <div id="overlay"></div>
+    <script src="/website portfolio/js-code/index-js.js"></script>
+</body>
+</html>

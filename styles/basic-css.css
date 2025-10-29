@@ -1,0 +1,91 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    font-family:'Segoe UI';
+}
+html{
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+*{
+    margin:0;
+    padding:0;
+
+}
+nav ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    list-style:none;
+    align-items:center;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+nav a{
+    padding: 10px 50px;
+    text-decoration:none;
+    display:inline-block;
+    color:black;
+    font-size:1.5rem;
+    font-weight:bold;
+    position:relative;
+    z-index:1;
+    flex-shrink: 1;
+}
+nav a::after {
+    position: absolute;
+    content: '';
+    left: 10px;
+    bottom: 0;
+    width: 20px;
+    height: 3px;
+    background-color: blue;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    z-index: -1;
+}
+
+nav a:hover::after {
+    height: 100%;
+    background-color: darkblue;
+}
+
+
+
+footer {
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  margin-top: auto;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-div > div {
+  font-weight: bold;
+}
+
+.footer-right{
+    padding-right: 10vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    .about-me-a,
+    .projects-a {
+        display: none;
+    }
+}

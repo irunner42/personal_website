@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="styles/basic-css.css" />
+    <link rel="stylesheet" href="styles/buttons-css.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <meta charset="utf-8" />
+    <title>Kristian Bauer - Personal Website</title>
+</head>
+<body>
+
+    <nav class="nav-up">
+    </nav>
+    <nav class="nav-bottom">
+        <ul>
+            <li><button data-modal-target="#modal" class="contact-me-button">Contact Me</button></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html" class="projects-a">Projects</a></li>
+            <li><a href="post-blog.html" class="about-me-a">About me</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="modal" id="modal">
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        <div class="modal_header">
+            <div class="title">Get In Touch</div>
+            <button type="button" data-close-button class="close_button">&times;</button>
+        </div>
+        <div class="modal_body">
+            <input type="hidden" name="access_key" value="45d4ebc0-09a4-43e3-96dd-1e376b2b80b1">
+
+            <div class="modal_body_tag">Name</div>
+            <input class="modal_input" type="text" placeholder="Your Name" required name="name" />
+
+            <div class="modal_body_tag">Email</div>
+            <input class="modal_input" type="email" placeholder="Your Email" required name="email" />
+
+            <div class="modal_body_tag">Message</div>
+            <textarea class="modal_input_message" placeholder="Your Message" name="message"></textarea>
+
+            <button id="submitBtn" class="submit_button" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+
+     <div>
+        <p class="welcome-p" id="myText_1">Hi, My name is <span style="color:blue;">Kristian Bauer.</span> I am an Applied Economics student in the Comenius University</p>
+    </div>
+
+    <div class="bluebox">
+        <div class="text_box" id="myText">
+            <h2 class="section-title">A bit about me</h2>
+            <p>I’m 23 and interested in economics, math, and programming. I’ve lived in several countries, which has made me curious about how people and systems work in different places. I enjoy learning new things, especially in finance and data, and I’m planning to pursue the CFA and CPA, and maybe a PhD down the road. Outside of work and study, I love traveling—especially to the mountains.</p>
+        </div>
+        <div> <img src="items-index/my_photo_website.jpg"  class="image_box" id= "myImage" alt="a young man sitting on a tree trunk."/> </div>
+    </div>
+
+
+    <div class="latest-post-box">
+        <h2 onclick="location.href='project.html'">Latest Projects &#8594</h2>
+        <div class="latest-post-content">
+            <div class="latest-post-image-container"  onclick="window.location.href='projects-pages/wage-salary.html'">
+                <img src="items-project/stock-project.jpg" alt="Wage Calculator Project Preview" id="project_blog">
+                    <div class="image-overlay">
+                        <p class="view-project-btn" onclick="window.location.href='projects-pages/wage-salary.html'">
+                            Python Tkinter App For Calculating Your Wage (EN)
+                        </p>
+                    </div>
+            </div>
+            <p class="side-text">Here you can find my latest projects, I will try my best to post something new every month!</p>
+        </div>
+    </div>
+
+
+    <div class="latest-about-box">
+        <h2 onclick="location.href='post-blog.html'"> &#8592 Latest Posts </h2>
+        <div class="latest-about-content">
+            <p class="side-text-about">View my latest posts, travel and reviews!</p>
+            <div class="latest-about-image-container"  onclick="window.location.href='post-pages/deloitte-college-2025.html' " id="post_blog">
+                <img src="items-project/post-stock.jpg" alt="Deloitte College 2025 Post Preview" >
+                    <div class="image-overlay-about">
+                        <p class="view-about" onclick="window.location.href='post-pages/deloitte-college-2025.html'">
+                            Deloitte College 2025 v Bratislave (SK)
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "social-media-box">
+        <h2>Connect with me.</h2>
+        <div class="social-media-buttons">
+              <a href="https://github.com/irunner42/" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/kristian-bauer-a1ba38339/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+
+
+    
+
+
+    <footer>
+        <div class="footer-div">
+            <div class="footer-left">Made by Kristian Bauer</div>
+            <div class="footer-middle"></div>
+            <div class="footer-right" onclick="window.open('Zivotopis_Bauer_2.pdf')">My CV</div>
+        </div>
+    </footer>
+
+    <div id="overlay"></div>
+    <script src="js-code/index-js.js"></script>
+</body>
+</html>

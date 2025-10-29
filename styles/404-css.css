@@ -1,0 +1,39 @@
+.main_message{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width:100%;
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+.oops{
+  font-size: 15rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.not_found{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0.25rem;
+}
+.message{
+  font-size:1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button_home{
+  margin-top: 0.75rem;
+  padding: 0.85rem;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
