@@ -51,7 +51,7 @@
 .latest-post-box
 {
     background-color: blue;
-    margin-bottom: 10vh;
+    margin-bottom: 10%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
@@ -131,7 +131,7 @@
 .latest-about-box
 {
     background-color: blue;
-    margin-bottom: 25vh;
+    margin-bottom: 10%;
     margin-top: 20vh;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -253,4 +253,5 @@ font-size: 2.5rem;
 .welcome-p.visible{
     opacity: 1;
 }
+
 
